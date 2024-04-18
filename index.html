@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin magic</title>
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+body{
+    /* background: url(/xampp/htdocs/SaytizNet2/images/hatsBg.jpg) no-repeat center center / cover; */
+    height: 900px;
+}
+
+.bg-light{
+    background-color: #800020;
+}
+
+.container3 {
+
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+			margin-bottom: 100px;
+        }
+
+		footer {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .card {
+            width: 300px;
+			height: 420px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+			display: inline-block;
+            overflow: hidden;
+        }
+		.card a{
+			
+		}
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            margin-bottom: 15px;
+        }
+        .card-link {
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+			
+        }
+        .card-link:hover {
+            background-color: #0056b3;
+        }
+
+        .slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slides {
+  
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.slider {
+    width: 200%;
+    position: relative;
+}
+
+.slides {
+    
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.left-side {
+    width: 40%;
+}
+
+.right-side {
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 420px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.card-link {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #0056b3;
+}
+
+.slider {
+    margin-top: 10px;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent; 
+    padding: 20px;
+    z-index: 2;
+    max-width: 210px;
+	height: 130px;
+	border: none;
+}
+
+
+.slides {
+    width: 100%;
+
+}
+
+.offer-header {
+    font-size: 18px; 
+    color: #d9534f; 
+    font-weight: bold;
+    background-color: #ffd700; 
+    padding: 5px 10px;
+    display: inline-block; /* To shrink the background to the text size */
+    border-radius: 5px; 
+    margin-bottom: 10px;
+}
+.offer-header {
+    background-color: #FF4136; 
+    color: white; /* White text for contrast */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}
+.special-offer {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white; /* White text for contrast */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}      
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    margin-bottom: 15px;
+}
+
+.product-link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header" class="bg-light">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-3">
+            
+				
+			
+				<a>
+				<img src="images/logoExtra.png" style="height: 80px;" alt="Name of the site">
+				</a>
+			
+            <nav id="navigation">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<input type="text" class="form-control" placeholder="Search...">
+					</li>
+					<li class="nav-item">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/penguinmagic" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+					</li>
+				
+				</ul>
+            </nav>
+
+			
+			<!-- Right side of Nav -->
+
+            <div class="account-icon">
+			<ul class="nav">
+				<li class="nav-item dropdown" >
+					<a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+					   data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 19%;">Services</a>
+					<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+						<li><a class="dropdown-item" href="#">Sign in</a></li>
+						<li><a class="dropdown-item" href="contact.html">Help</a></li>
+					</ul>
+				</li>
+                <!-- Placeholder account icon (Replace with your preferred icon) -->
+                <a href="account.html" class="account"><img src="images/icon.png" style="height: 80px;"></a>
+				</li>
+				<li class="nav-item">
+				<a href="#"><img src="images/cartN.png" style="height: 80px;"></a>
+				</li>
+
+            </ul>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+
+<!-- Slider -->
+<div class="main">
+    <div class="slider">
+        <div class="slides">
+            <img src="images/penT.jpg" alt="Image 1" height="400px" width="500px">
+            <img src="images/cardT.jpg" alt="Image 2" height="400px" width="500px">
+            <img src="images/cardT2.jpg" alt="Image 3" height="400px" width="500px">
+            <img src="images/cardT3.jpg" alt="Image 4" height="400px" width="500px">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Card positioned at the bottom-right of the slider -->
+        <div class="card">
+			<h2 class="offer-header">Special Offer!</h2>
+			<h1 style="color: red;"><strong>20% OFF</strong></h1>
+		</div>
+		
+    </div>
+</div>
+
+
+
+
+<!-- End Slider -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slider new wt out frames -->
+
+
+<!-- Main -->
+
+
+	
+<div class="product-container">
+    <div class="product-card">
+        <img src="images/magicshow1.jpg" alt="Magic Show 1">
+        <div class="product-info">
+            <h2 class="product-title">Social Media</h2>
+            <p class="product-description">"Join our magical live streams! Follow us on social media for real-time illusions and interactive magic. Get enchanted live!"</p>
+            <a href="#" class="product-link">Learn More</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="images/cardT.jpg" alt="Card Trick">
+        <div class="product-info">
+            <h2 class="product-title">Giveaways</h2>
+            <p class="product-description">"Win magical prizes with our giveaways! Follow for a chance to snag exclusive magic kits and more. Your magical adventure awaits—enter now!"</p>
+            <a href="#" class="product-link">Learn More</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="images/cardT2.jpg" alt="Card Trick 2" style="height: 168px;">
+        <div class="product-info">
+            <h2 class="product-title">Free Magic Videos</h2>
+            <p class="product-description">"Unlock a trove of free magic! Dive into our collection of free videos and learn amazing tricks to dazzle your friends. All the magic, none of the cost. Start your magical journey now!"</p>
+            <a href="#" class="product-link">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<!-- End Slider -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+	
+            
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+<footer>
+	<p>&copy; 2023 re-Penguin Magic. All Rights Reserved.</p>
+</footer>
+
+<script>
+	let slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  let slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+	  
+	  for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  
+	  slideIndex++;
+	  
+	  if (slideIndex > slides.length) {
+		slideIndex = 1;
+	  }
+	  
+	  slides[slideIndex - 1].style.display = "block";  
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	
+	function prevSlide() {
+	  if (slideIndex > 1) {
+		slideIndex--;
+	  } else {
+		slideIndex = slides.length;
+	  }
+	  showSlides();
+	}
+	
+	function nextSlide() {
+	  if (slideIndex < slides.length) {
+		slideIndex++;
+	  } else {
+		slideIndex = 1;
+	  }
+	  showSlides();
+	}
+	</script>

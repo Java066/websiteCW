@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .con1{
+            max-width: 400px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            
+            margin-left: 70%;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group1 {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .form-group1 label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group1 input[type="text"],
+        .form-group1 input[type="email"],
+        .form-group1 textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            float: right;
+        }
+        .form-group1 textarea {
+            height: 100px;
+            resize: none;
+        }
+        .form-group1::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .submit-btn1 {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            float: right;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn1:hover {
+            background-color: #0056b3;
+        }
+        .heading-contact {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .contact-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-card pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header" class="bg-light">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-3">
+            
+				
+			
+				<a>
+				<img src="images/logoExtra.png" style="height: 80px;" alt="Name of the site">
+				</a>
+			
+            <nav id="navigation">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<input type="text" class="form-control" placeholder="Search...">
+					</li>
+					<li class="nav-item">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/penguinmagic" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+					</li>
+				
+				</ul>
+            </nav>
+
+			
+			<!-- Right side of Nav -->
+
+            <div class="account-icon">
+			<ul class="nav">
+				<li class="nav-item dropdown" >
+					<a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+					   data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 19%;">Services</a>
+					<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+						<li><a class="dropdown-item" href="">Sign in</a></li>
+						<li><a class="dropdown-item" href="contact.html">Help</a></li>
+					</ul>
+				</li>
+                <!-- Placeholder account icon (Replace with your preferred icon) -->
+                <a href="account.html" class="account"><img src="images/icon.png" style="height: 80px;"></a>
+				</li>
+				<li class="nav-item">
+				<a href="#"><img src="images/cartN.png" style="height: 80px;"></a>
+				</li>
+
+            </ul>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+
+
+
+<div>
+    <h2 class="heading-contact">Contact Us:</h2>
+    <div class="contact-card">
+        <pre>We welcome your questions, comments, and suggestions. Please write to us or call us at your convenience.
+
+Customer Service:
+Phone: 800-880-2592 | International: +1 707-317-6733
+E-mail: CustomerService@PenguinMagic.com.
+
+Questions before you buy: please e-mail Sales@PenguinMagic.com.
+
+To partner with Penguin Magic: please e-mail partner@PenguinMagic.com
+
+Our warehouse is located at:
+
+Penguin Magic
+3299 Monier Circle, Unit A
+Rancho Cordova, CA 95742
+
+
+Hours of operation:
+Weekdays, 8am to 4pm (Pacific)</pre>
+    </div>
+
+    <h2 class="heading-contact">FAQ:</h2>
+    <div class="contact-card">
+        <pre>
+            Refunds
+
+    It is our policy not to offer refunds unless there is defect or damage. We have this policy because we sell secrets, the value of which cannot be returned. 
+    We provide comprehensive product descriptions and videos to help you make your purchase decision carefully.
+
+            Returns Policy:
+
+    We will be glad to replace any trick with a manufacturer's defect or damage incurred during shipping. Please contact us and we will arrange for replacement of your trick.
+    We stand behind the products we have chosen to carry. Our primary concern is that our customers have access to solid effects with tremendous performance value.
+    Please understand that we thrive on repeat and referral business. We depend on your satisfaction and will work with you to help you realize the performance value of your purchase.
+
+    Penguin Magic is pleased to Announce:
+
+    FREE Standard Shipping on ALL orders shipping to USA over $35
+
+
+
+    We ship from the Penguin Magic warehouse in beautiful Rancho Cordova, California.
+
+    Shipping options within the USA
+    Free and Standard Shipping
+    US Postal Service First Class or Parcel Post
+    9-13 days
+    One item: $4.95, two items $5.95, three or more items: $6.95
+    No tracking information
+
+    US Postal Service Priority Mail
+    3-5 days
+    One item: $5.95, Two items: $6.95, Three or more items: $7.95
+    No tracking information
+
+    FedEx Ground
+    Approx. $5-$15
+    1-7 days depending on how far you are from the Penguin warehouse in Northern California
+    FedEx Tracking Number
+
+    FedEx Overnight
+    Normally approx. $16-$50
+    Next business day by 3pm
+    FedEx Tracking Number
+    Shipping to Canada
+    Canadian Shipping
+    USPS First Class Mail
+    Approx. $5-$20 depending on weight of package
+    1-3 Weeks
+    No tracking Information
+    Shipping to Europe, Asia, South America, Australia and other destinations
+    Foreign Shipping
+    US Postal Service Air Mail
+    Approx $9-$50 (Customs Duties may apply)
+    1-3 weeks
+    No tracking information
+
+    Things to consider when choosing a shipping method
+    We do ship to FPO/APO address through the US Postal Service. Because of heightened securitye delvery times for FPO/APO addresses can take longer than expected.
+    The estimates given above are based on "normal business days". Around the holidays shipments often take longer for delivery. Even shipments made through UPS 2 Day and UPS Express can take longer during the holidays.
+    The Post Office may restrict service hours and days in local areas. The estimates above are based ona 6 day delivery week for USPS and a 5 day delivery week for UPS.</pre>
+    </div>
+</div>
+
+<div class="con1">
+    <h2>Contact Us</h2>
+    <form method="post" action="actionForm.php">
+        <div class="form-group1">   
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="nameless1">
+        </div>
+        <div class="form-group1">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required class="nameless2">
+        </div>
+        <div class="form-group1">
+            <label for="request">Request:</label>
+            <textarea id="request" name="request" required class="nameless3"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn1" id="Submit">
+    </form>
+</div>
+
+</body>
+</html>
+
